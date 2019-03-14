@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Learning express.js</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/css/weather.png">
+  </head>
+  <body>
+    <div class="main-content">
+      {{>header}}
+      <p>Provide address to get Weather Report.</p>
+      <form action="">
+        <input type="text" placeholder="Location">
+        <button>Search</button>
+      </form>
+      <p id="msg-1"></p>
+      <p id="msg-2"></p>
+    </div>
+
+      {{>footer}}
+
+      <script src="/js/app.js"></script>
+  </body>
+</html>
