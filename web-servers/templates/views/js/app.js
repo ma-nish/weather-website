@@ -1,16 +1,3 @@
-// document.write('<br>This is from JavaScript File');
-
-
-// fetch('http://puzzle.mead.io/puzzle')
-// .then((response) => {
-//   response.json().then((data) => {
-//     console.log(data);
-//   })
-// })
-
-
-
-
 const weatherForm = document.querySelector('form');
 const search = document.querySelector('input');
 const message1 = document.querySelector('#msg-1');
@@ -31,7 +18,7 @@ const weatherInfo = (address) => {
   if(!address){
     alert('Please provide a valid address.')
   }else{
-    fetch(`http://localhost:3000/weather?address=${address}`)
+    fetch(`/weather?address=${address}`)
     .then((response) => {
       response.json()
       .then((data) => {
